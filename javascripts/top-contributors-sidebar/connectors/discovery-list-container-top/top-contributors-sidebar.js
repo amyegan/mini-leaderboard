@@ -31,7 +31,7 @@ const shouldFetchDirectoryItems = (settings, component) => {
 export default {
   setupComponent(attrs, component) {
     component.set("hideSidebar", true);
-    document.querySelector(".topic-list").classList.add("with-sidebar");
+    document.querySelector("#list-area").classList.add("with-sidebar");
 
     if (this.site.mobileView) {
       return;
