@@ -20,6 +20,7 @@ const fetchDirectoryItems = (settings, component) => {
 };
 
 const shouldFetchDirectoryItems = (settings, component) => {
+  console.log('### component', component);
   return (
     settings.enable_top_contributors &&
     component.discoveryList &&
